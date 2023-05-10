@@ -60,7 +60,7 @@ class NumberList extends React.Component {
                                 />)}
                         </tbody>
                     </table>
-                    <SelectedNumbers numbers={selectedNumbers} onNumberLockClicked={this.onNumberLockClicked} />
+                    <SelectedNumbers numbers={selectedNumbers} onNumberLockClicked={this.onNumberLockClicked} lockedNumbers={lockedNumbers} />
                 </div>
             </div>
             )

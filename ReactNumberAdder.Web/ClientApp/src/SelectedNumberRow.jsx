@@ -2,9 +2,9 @@
 
 class SelectedNumberRow extends React.Component {
     render() {
-        const {number, onNumberLockClicked } = this.props
+        const {number, onNumberLockClicked, isLocked } = this.props
         return (
-            <li className='list-group-item'>{number}<button className='ms-5 btn btn-primary' onClick={onNumberLockClicked}>Lock</button></li>
+            <li className='list-group-item'>{number}<button className='ms-5 btn btn-primary' onClick={onNumberLockClicked}>{`${isLocked ? 'Unlock' : 'Lock'}`}</button></li>
         )
     }
 }
